@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:  scrum-dhaka
+  name:  deployment-arnab
   namespace: demo
 spec:
   selector:
     matchLabels:
-      app: scrum-dhaka
+      app: deployment-arnab
   template:
     metadata:
       labels:
-        app: scrum-dhaka
+        app: deployment-arnab
     spec:
       containers:
-        - name: scrum-dhaka
+        - name: deployment-arnab
           image: arnabmj/scrum-dhaka:latest
           imagePullPolicy: Always
           ports:
